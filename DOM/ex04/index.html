@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Imóveis</title>
+    <style>
+        h3#list {
+            padding-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h3>Cadastro de Imóveis</h3>
+
+    <form onsubmit="app.addProperty()">
+        <p>
+            <label for="kind">Tipo:
+                <select name="kind" id="kind">
+                    <option value="apart">Apartamento</option>
+                    <option value="casa">Casa</option>
+                </select>
+            </label>
+        </p>
+
+        <p>
+            <label for="area">Área:
+                <input type="number" name="area" id="area" step="any" min="0" />
+            </label>
+        </p>
+
+        <p>
+            <label for="rented">
+                <input type="checkbox" name="rented" id="rented" /> Alugado
+            </label>
+        </p>
+
+        <p>
+            <button type="submit">Salvar</button>
+            <button type="reset">Limpar</button>
+        </p>
+    </form>
+
+    <h3 id="list" hidden>Imóveis Cadastrados</h3>
+    <ul id="properties"></ul>
+<script src="script-prop.js"></script>
+<script src="script-app.js"></script>
+<script src="script-main.js"></script>
+</body>
+</html>

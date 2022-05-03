@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Submit</title>
+</head>
+<body>
+    <form onsubmit="save()">
+        <p>
+            <label for="name">Nome: </label>
+            <input type="text" name="name" id="name">
+        </p>
+        <p>
+            <label for="programLang">Programa em:</label>
+            <select name="programLang" id="programLang">
+                <option value="JavaScript">JavaScript</option>
+                <option value="Ruby">Ruby</option>
+                <option value="PHP">PHP</option>
+                <option value="Python">Python</option>
+            </select>
+        </p>
+        <button type="submit">Salvar</button>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>

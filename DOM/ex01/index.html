@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selecionando Elementos</title>
+  </head>
+  <body>
+    <button onclick="show()">Exibir!</button>
+
+    <p>
+      <label for="name">Nome: </label>
+      <input type="text" id="name" name="fullname" />
+    </p>
+
+    <div id="phones">
+      <p>
+        <label for="phone01">Telefone 1: </label>
+        <input type="tel" name="phone01" id="phone01" />
+      </p>
+      <p>
+        <label for="phone02">Telefone 2: </label>
+        <input type="tel" name="phone02" id="phone02" />
+      </p>
+
+      <p>
+          <a id="call">Ligue para mim</a>
+      </p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

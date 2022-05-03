@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores Form</title>
+    <style>
+        body {
+            user-select: none;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <p>
+            <label for="name">Nome: </label>
+            <input type="text" name="name" id="name">
+        </p>
+
+        <p>
+            <label for="color">Cor primária: </label>
+            <select name="color" id="color">
+                <option value="yellow">Amarelo</option>
+                <option value="blue">Azul</option>
+                <option value="red">Vermelho</option>
+            </select>
+        </p>
+        
+        <p>
+            <label for="like-programming">Gosta de programar?</label>
+            <label for="like-programming-1"><input type="radio" value="Sim" name="like-programming" id="like-programming-1" />Sim</label>
+            
+
+            <label for="like-programming-2"><input type="radio" value="Não" name="like-programming" id="like-programming-2" />Não</label>
+            
+        </p>
+
+        <p>
+            <label>Conhecimentos em programção WEB: </label>
+            <label for="developer-options-1"><input type="checkbox" value="HTML" name="developer-options" id="developer-options-1" />HTML</label>
+            
+            <label for="developer-options-2"><input type="checkbox" value="JavaScript" name="developer-options" id="developer-options-2" />JavaScript</label>
+            
+            <label for="developer-options-3"><input type="checkbox" value="CSS" name="developer-options" id="developer-options-3" />CSS</label>
+            
+            <label for="developer-options-4"><input type="checkbox" value="Express" name="developer-options" id="developer-options-4" />Express</label>
+        </p>
+        <button type="button" id="showInfo">Mostrar informações</button>
+    </form>
+<script src="script.js"></script>
+</body>
+</html>
